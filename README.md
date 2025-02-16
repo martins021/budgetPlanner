@@ -14,3 +14,6 @@ poetry --version
 poetry self add poetry-plugin-shell
 poetry shell
 poetry install
+
+# Run
+poetry run python manage.py runserver
