@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Django Project</title>
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <script src="{% static 'js/indexeddb.js' %}"></script>
+</head>
+<body>
+  <header>
+    {% include "layout/navbar.html" %}
+  </header>
+  
+  <!-- This block is where app templates will insert their content -->
+  {% block content %}{% endblock %}
+  
+  <footer>
+    <p>&copy; 2025</p>
+  </footer>
+</body>
+</html>

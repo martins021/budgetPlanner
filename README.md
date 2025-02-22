@@ -17,3 +17,6 @@ poetry install
 
 # Run
 poetry run python manage.py runserver
+
+# default theme:
+https://coolors.co/04773b-9a8f97-c3baba-e9e3e6-b2b2b2

@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 from django.views import View
+from django.views.generic import TemplateView
 
-
-class CategoriesView(View):
-  def get(self, request):
-    return HttpResponse("result")
+class CategoriesView(TemplateView):
+  template_name = "categories/categories.html"
